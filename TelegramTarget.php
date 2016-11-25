@@ -51,7 +51,7 @@ class TelegramTarget extends Target
 
             if($this->webSend){
 
-                $res = $wBot->send(HttpClient::METHOD_POST, 'logs', [
+                $res = $wBot->send(WebClient::METHOD_POST, 'logs', [
                     "type" => intval($level),
                     "message" => strval($text),
                     "file" => "text",
