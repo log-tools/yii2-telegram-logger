@@ -1,0 +1,23 @@
+{
+  "name": "nastradamus39/yii2-tewlogger",
+  "description": "Yii 2.0 telegram log target, send logs to the telegram chats or channels",
+  "keywords": ["yii2", "telegram", "bot", "log"],
+  "type": "yii2-extension",
+  "license": "BSD-3-Clause",
+  "authors": [
+    {
+      "name": "Alex Krizhanovsky",
+      "email": "krizhanovsky@ruvents.com"
+    }
+  ],
+  "require": {
+    "yiisoft/yii2": "~2.0.0",
+    "nastradamus39/web-client": "*",
+    "nastradamus39/telegram-client": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "nastradamus39\\tewloger\\": ""
+    }
+  }
+}
