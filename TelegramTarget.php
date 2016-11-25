@@ -1,12 +1,11 @@
 <?php
 
-namespace nastradamus39\telegram;
+namespace nastradamus39\tewloger;
 
-use nastradamus39\HttpClient;
-use yii\log\Target;
+use yii\helpers\VarDumper;
 use yii\base\InvalidConfigException;
 use yii\log\Logger;
-use yii\helpers\VarDumper;
+use yii\log\Target;
 
 class TelegramTarget extends Target
 {
@@ -37,9 +36,9 @@ class TelegramTarget extends Target
 
     public function export()
     {
-        $tBot = new TelegramBot($this->botToken, $this->chatId);
+        $tBot = new TelegramClient($this->botToken, $this->chatId);
 
-        $wBot = new HttpClient([
+        $wBot = new WebClient([
             "key"   =>$this->webKey,
             "token" =>$this->webToken,
             "url"   =>$this->webUrlApi
