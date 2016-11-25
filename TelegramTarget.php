@@ -1,6 +1,6 @@
 <?php
 
-namespace nastradamus39\tewloger;
+namespace nastradamus39\tewlogger;
 
 use yii\helpers\VarDumper;
 use yii\base\InvalidConfigException;
